@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./findstyle.css">
+    <title>Поиск сотрудника</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="wrapper__find">
+                <input id="findInput" class="findInput" placeholder="  введите параметры для поиска" type="text">
+                <p class="find__help">Поиск ведется по 2м параметрам. 1 параметр по какому параметру ищем. 2 параметр что ищем. Пример имя Валентина. Поиск вернет информацию по всем сотрудникам с таким именем</p>
+                <button id="findBtn" class="findBtn" >поиск сотрудника</button>    
+            </div>
+
+            <div id="text" class="text__area"></div>
+        </div>
+    </div>
+    <script src="./initials.js"></script>
+</body>
+</html>
