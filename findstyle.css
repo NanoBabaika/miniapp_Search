@@ -1,4 +1,7 @@
-
+.personInfo {
+    margin-top: 15;
+    margin-bottom: 0;
+}
 
 .container {
     margin: 0 auto;
@@ -61,3 +64,4 @@
     text-align: center;
     color: black;
 }
+

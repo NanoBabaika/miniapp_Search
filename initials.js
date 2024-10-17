@@ -1,4 +1,3 @@
-// import {colleagues} from "./data.js";
 console.log('Привет, кожанный! |_{^_^}_| Давай проверим твой код на работоспособность');
  
 // Типа база данных, потом нужно будет вывести в отдельный файл
@@ -10,11 +9,11 @@ let colleagues = [
     },
     {
         name: 'Ольга',
-        fathername:'Олеговна' ,
+        fathername:'Сергеевна' ,
         lastname: 'Чердынцева',
     },
     {
-        name:' Владислава',
+        name:'Владислава',
         fathername: 'Сергеевна' ,
         lastname: 'Иванова',
     },
@@ -57,13 +56,13 @@ function findPerson(findOption,  wantedPerson,   personArray = colleagues,) {
     //  Нужен цикл что бы пройтись по массиву. Деструктуризировать каждый объект и передать его в массив
         for (let person of findedItems) {
             let {name, fathername, lastname} = person;
-            let personInfo = ` ${name} ${fathername} ${lastname}`;
+            let personInfo = ` <p class="personInfo">${name} ${fathername} ${lastname}</p>`;
             resultInfo.push(personInfo);
         }
     
     // После чего объединяем элементы массива в строку и выводим ее содержимое в текстконтент
-        let resultInfoText = resultInfo.join('.    ');
-        textArea.innerHTML = `Результат поиска:  ${resultInfoText}.`;
+        let resultInfoText = resultInfo.join('');
+        textArea.innerHTML = `Результат поиска: ${resultInfoText}`;
     }
          
 }
